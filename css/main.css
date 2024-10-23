@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /*browser specific */
+    -webkit-box-sizing: border-box; /* browser specific */
+}
+
+/*
+  ========================================
+  VARIABLES
+  ========================================
+*/
+:root {
+    --slate-900: #1f314f;
+    --slate-500: #68778d;
+    --slate-300: #d5e1ef;
+    --white: #ffffff;
+}
+
+/*
+  ========================================
+  FONTS
+  ========================================
+*/
+.font-main {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.font-subtext {
+    color: var(--slate-500);
+    font-size: 16px;
+}
+
+/*
+  ========================================
+  MAIN
+  ========================================
+*/
+
+body {
+    background-color: var(--slate-300);
+    height: 100vh; /* the height of the current screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background-color: var(--white);
+    max-width: 300px;
+    height: fit-content;
+
+    border-radius: 10px;
+}
+
+.card {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.qr-section {
+    width: 98%;
+    padding-bottom: 5%;
+}
+
+img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.text-section {
+    font-family: "Outfit", sans-serif;
+}
+
+p.font-main {
+    text-align: center;
+}
+
+p.font-subtext {
+    padding-top: 8px;
+    text-align: center;
+}
